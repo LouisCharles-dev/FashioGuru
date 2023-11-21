@@ -12,7 +12,7 @@ Projet Hetic master 2
 
 - On ouvre le notebook clothes_projet_model.ypynb -> On créer ainsi le pickle du modèle ainsi que le dataframe, on télécharge aussi les fichiers indiqués sur le notebook.
 - On enregistre le dataframe créé (df_clotes_embeded.json) dans le dossier "Data" de notre projet.
-- On créer le dossier Model dans notre projet et on place notre pickel à l'interieur, il fait environ 1,3 gb.
+- On créer le dossier Model à la racine de notre projet et on place notre pickel à l'interieur, il fait environ 1,3 gb.
 - On télécharge les images : https://drive.google.com/file/d/1U2PljA7NE57jcSSzPs21ZurdIPXdYZtN/view  environ 5,4GB.
 - On place le dossier images téléchargé dans le dossier static de notre projet.
 - On installe les requirements.txt (pip install -r requirements.txt).
