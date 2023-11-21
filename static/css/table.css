@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&family=Lato:wght@300;400&display=swap');
+
+  body{
+    margin:0;
+    padding:0;
+  }
+  
+  .first_page{
+    background-image: url('background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    display:flex;
+    flex-direction: column;
+  }
+
+  nav  a{ 
+    float: left; 
+    text-decoration: none; 
+    color: #34251F; 
+    height: 36px; 
+    line-height: 33px; 
+    padding: 0 10px; 
+    font-family: 'Lato', sans-serif;
+    font-size: 13px; 
+    transition: .5s; 
+    }
+
+  nav a:hover{
+    transform: translateY(-10px);
+  }
+
+  .nav_bar{
+    display: flex;
+    margin:30px 0 50px 0;
+  }
+
+  .left_nav{
+    display:flex;
+    justify-content: flex-start;
+    margin-left: 100px;
+  }
+
+  .right_nav{
+    display:flex;
+    justify-content: flex-end;
+    margin-right: 100px;
+    width: 100%;
+  }
+
+  .front_page{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .left_content{
+    display: flex;
+    max-width: 394px;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    margin-right: 100px
+  }
+    
+  .right_content{
+    display: flex;
+    width: 317px;
+    height: 385px;
+    background: url('Hero-Image.svg') center/cover no-repeat;
+    margin-top: 30px;
+  }
+
+  .monBouton {
+    max-height: 30px;
+    padding: 10px 20px; 
+    font-size: 16px; 
+    text-align: center;
+    text-decoration: none;
+    background-color: #34251F; 
+    color: #fff; 
+    border-radius: 5px; 
+  }
+
+  
+  .monBouton:hover {
+    background-color: #34251F; 
+    border-color: #34251F; 
+    color: #fff; 
+    transform: translateY(-10px);
+  }
+
+  .second_page{
+    background-image: url('background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+  }
+
+  .titre{
+    display:flex;
+    justify-content: center;
+    font-family: 'Frank Ruhl Libre', serif;
+    margin-top: 50px;
+  }
+
+  .titre1{
+    display:flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Frank Ruhl Libre', serif;
+  }
+
+  .sous_titre{
+    display:flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    font-family: 'Lato', sans-serif;
+  }
+
+  .sous_titre1{
+    display:flex;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    max-width: 290px;
+  }
+
+  .tree_image{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .image1{
+    display: flex;
+    width: 235px;
+    height: 235px;
+    background: url('zara.png') center/cover no-repeat;
+    border-radius: 0 0 0 50px;
+  }
+
+  .image2{
+    display: flex;
+    width: 235px;
+    height: 235px;
+    background: url('h&m.png') center/cover no-repeat;
+    border-radius: 0 0 0 50px;
+  }
+
+  .image3{
+    display: flex;
+    width: 235px;
+    height: 235px;
+    background: url('shein.png') center/cover no-repeat;
+    border-radius: 0 0 0 50px;
+  }
+
+  .advice{
+    background-image: url('background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+  }
+
+  .cards{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .card1{
+    display: flex;
+    width: 235px;
+    height: 235px;
+    background: url('cards.png') center/cover no-repeat;
+    border: solid #34251F;
+    border-radius: 0 0 0 50px;
+  }
+
+  .card2{
+    display: flex;
+    width: 235px;
+    height: 235px;
+    background: url('cards.png') center/cover no-repeat;
+    border: solid #34251F;
+    border-radius: 0 0 0 50px;
+  }
+
+  .card3{
+    display: flex;
+    width: 235px;
+    height: 235px;
+    background: url('cards.png') center/cover no-repeat;
+    border: solid #34251F;
+    border-radius: 0 0 0 50px;
+  }
+
+  .footer {
+    position: relative;
+    background: #34251F;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .social-icon,
+  .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+  }
+  
+  .social-icon__item,
+  .menu__item {
+    list-style: none;
+  }
+  
+  .social-icon__link {
+    font-size: 2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+  }
+  .social-icon__link:hover {
+    transform: translateY(-10px);
+  }
+  
+  .menu__link {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 10px;
+    display: inline-block;
+    transition: 0.5s;
+    text-decoration: none;
+    opacity: 0.75;
+    font-weight: 300;
+  }
+  
+  .menu__link:hover {
+    opacity: 1;
+    transform: translateY(-10px);
+  }
+  
+  .footer p {
+    color: #fff;
+    margin: 15px 0 10px 0;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+ .menu__link .copyright{
+  font-family: 'Lato', sans-serif;
+  }
+
+  /*******************Page make prediction***********************/
+  .form_contain{
+    display: flex;
+    justify-content: center;
+  }
+
+  .form {
+    background-color: #34251F;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 700px;
+    padding: 20px;
+    width: 320px;
+  }
+  
+  .title {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+  
+  .subtitle {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+  .input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .ic1 {
+    margin-top: 40px;
+  }
+  
+  .ic2 {
+    margin-top: 30px;
+  }
+  
+  .input {
+    background-color: #76625a;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+  }
+  
+  .cut {
+    background-color: #34251F;
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 76px;
+  }
+  
+  .cut-short {
+    width: 50px;
+  }
+  
+  .input:focus ~ .cut,
+  .input:not(:placeholder-shown) ~ .cut {
+    transform: translateY(8px);
+  }
+  
+  .placeholder {
+    color: #EEDDCC;
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+  }
+  
+  .input:focus ~ .placeholder,
+  .input:not(:placeholder-shown) ~ .placeholder {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+  }
+  
+  .input:not(:placeholder-shown) ~ .placeholder {
+    color: #808097;
+  }
+  
+  .input:focus ~ .placeholder {
+    color: #eee;
+  }
+  
+  .submit {
+    background-color: #EEDDCC;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: #34251F;
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 38px;
+    outline: 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .submit:hover {
+    transform: translateY(-10px);
+  }
+  
+/*******************Page prompt prediction**********************************************************/
+
+.form2{
+  background-color: #34251F;
+  border-radius: 20px;
+  box-sizing: border-box;
+  height: 486px;
+  padding: 20px;
+  width: 620px;
+}
+
+.taille_modele{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #EEDDCC;
+  border: 0;
+  box-sizing: border-box;
+  color: #34251F;
+  cursor: pointer;
+  font-size: 18px;
+  height: 50px;
+  margin-top: 38px;
+  outline: 0;
+  text-align: center;
+  width: 100%;
+  border-radius: 12px;
+}
+
+.result_picture{
+  display: flex;
+  flex-direction: row;
+  margin:50px 0 50px 0;
+}
+
+.result_picture img{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 300px;
+  max-height: 300px;
+  margin:20px;
+  border-radius: 0 0 0 50px;
+}
