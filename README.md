@@ -15,6 +15,9 @@ Projet Hetic master 2
 - On place notre pickel à l'interieur du dossier Model, il fait environ 1,3 gb.
 - On télécharge les images : https://drive.google.com/file/d/1U2PljA7NE57jcSSzPs21ZurdIPXdYZtN/view  environ 5,4GB.
 - On place le dossier images téléchargé dans le dossier static de notre projet.
+
+- On créer l'environnement : (sur windows : python -m venv fashionguru_env)
+- On lactive : (.\fashionguru_env\Scripts\activate)
 - On installe les requirements.txt (pip install -r requirements.txt).
 
 ### Lancement de l'app :
