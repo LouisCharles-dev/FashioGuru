@@ -22,3 +22,5 @@ Projet Hetic master 2
 
 - On lance le flask : (flask run)
 - L'app se lance sur une adresse local dans le navigateur
+
+Source : https://github.com/yumingj/DeepFashion-MultiModal
