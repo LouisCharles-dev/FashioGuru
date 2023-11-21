@@ -1,0 +1,71 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> Hetic projet groupe 4 </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/table.css') }}">
+    <script type="text/javascript" src="{{url_for('static', filename='js/script.js')}}"></script>
+</head>
+
+<body>
+    <div class="first_page">
+        <div class="nav_bar">
+            <nav class="left_nav">
+                <a href="/">FASHIONGURU</a>
+            </nav>
+
+            <nav class="right_nav">
+                <a href="">FEMME</a>
+                <a href="">ENFANT</a>
+                <a href="/compte">COMPTE</a>
+                <a href="">PREFERENCES</a>
+                <a href="/connection" class="monBouton2">CONNEXION</a>
+                <a href="">HOMME</a>
+            </nav>
+        </div>
+
+        <div class="form_contain">
+        <form action="{{ url_for('prompt_result')}}" method="post"class="form2">
+            <div class="taille_modele">Votre taille : {{recherche_taille}}</div>
+            <div class="title">Prompt</div>
+            <div class="subtitle">Trouvons des suggestions !</div>
+
+            <div class="input-container ic2">
+                <input name="camenBert" id="camenBert" class="input" type="text" placeholder=" " />
+                <div class="cut"></div>
+                <label for="camenBert" class="placeholder">A quoi tu pense ?</label>
+            </div>
+    
+            <button type="submit" class="submit">c'est parti !</button>
+          </form>   
+          </div>
+          
+        <footer class="footer">
+            <ul class="social-icon">
+                <li class="social-icon__item"><a class="social-icon__link" href="#">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a></li>
+              <li class="social-icon__item"><a class="social-icon__link" href="#">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a></li>
+              <li class="social-icon__item"><a class="social-icon__link" href="#">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a></li>
+              <li class="social-icon__item"><a class="social-icon__link" href="#">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a></li>
+            </ul>
+            <ul class="menu">
+              <li class="menu__item"><a class="menu__link" href="#">Homme</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Femme</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Enfant</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+              <li class="menu__item"><a class="menu__link" href="#">FAQ</a></li>
+            </ul>
+            <p class="copyright">&copy;2023 Louis CHARLES | All Rights Reserved</p>
+        </footer>
+        
+          <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>

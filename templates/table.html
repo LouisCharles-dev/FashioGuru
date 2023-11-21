@@ -1,0 +1,109 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title> Hetic projet groupe 4 </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/table.css') }}">
+    <script type="text/javascript" src="{{url_for('static', filename='js/script.js')}}"></script>
+</head>
+
+<body>
+    <div class="first_page">
+        <div class="nav_bar">
+            <nav class="left_nav">
+                <a href="/">FASHIONGURU</a>
+            </nav>
+
+            <nav class="right_nav">
+                <a href="">HOMME</a>
+                <a href="">FEMME</a>
+                <a href="">ENFANT</a>
+                <a href="/compte">COMPTE</a>
+                <a href="">PREFERENCES</a>
+                <a href="/connection" class="monBouton2">CONNEXION</a>
+            </nav>
+    </div>
+
+    <div class="front_page">
+        <article class="left_content">
+            <div class="titre1">
+                <p>
+                Des recommandations qui reflètent votre personnalité.
+                Votre style, notre passion !
+                </p>
+            </div>
+            <div class="sous_titre1">
+                <p>
+                A l’aide d’un moteur de recommandation nous vous proposons 
+                les meilleurs vetements adaptés à votre style.
+            </p>
+            </div>
+            <a href="/make_prediction" class="monBouton">
+                COMMENCER
+            </a>
+        </article>
+
+        <article class="right_content"></article>
+    </div>
+</div>
+
+<div class="second_page">
+    <div class="titre">
+        <h1>Nouvelle marque partenaire</h1>
+    </div>
+    <div class="sous_titre">
+        <p>Decouvrez toutes les nouvelles marques partenaire de FashionGuru !</p>
+    </div>
+
+    <div class="tree_image">
+        <article class="image1"></article>
+        <article class="image2"></article>
+        <article class="image3"></article>
+    </div>
+</div>
+
+<div class="advice">
+    <div class="titre">
+        <h1>Ce que les gens pensent de nous</h1>
+    </div>
+    <div class="sous_titre">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper congue eros</p>
+    </div>
+
+    <div class="cards">
+        <article class="card1"></article>
+        <article class="card2"></article>
+        <article class="card3"></article>
+    </div>
+</div>
+
+<footer class="footer">
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+    <ul class="menu">
+      <li class="menu__item"><a class="menu__link" href="#">Homme</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Femme</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Enfant</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+      <li class="menu__item"><a class="menu__link" href="#">FAQ</a></li>
+
+    </ul>
+    <p class="copyright">&copy;2023 Louis CHARLES | All Rights Reserved</p>
+  </footer>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
