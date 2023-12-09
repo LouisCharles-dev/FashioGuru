@@ -2,6 +2,8 @@ import pandas as pd
 import pickle
 import json
 from sklearn.metrics.pairwise import cosine_similarity
+from selenium import webdriver
+from selenium.webdriver.common.by import By
 
 #---------------------------------------Dataframe---------------------------------------------
 
@@ -23,10 +25,10 @@ def BERT(requete, genre='WOM'):
 
   laliste = []
   df3 = df[df['sexe']==genre]
-  for i in list(df3['encoding_label']):
+  for i in list(df3['encodig_label']):
     laliste.append(i) 
 
-  score_cos = cosine_similarity(
+  score_cos = cosine_similarity( 
         [requete_code],
         laliste)
     
@@ -52,3 +54,21 @@ def find_size(marque, sexe, tour_poitrine, tour_taille, tour_hanche):
             return row["Taille"]
 
     return "XXXL or more"
+
+#----------------------------------- récupérations Liens -----------------------------
+def get_links(prompt,size):
+    try:
+        prompt=prompt.strip()
+        driver = webdriver.Chrome()
+        driver.get(f'https://us.shein.com/pdsearch/{prompt}\
+                   ?attr_values={size}&exc_attr_id=87&page=1')
+        xpath = '//*[@id="product-list-v2"]/div/div[2]/div[2]/section/div[1]/section/div[2]/div[1]/a'
+        lien=driver.find_elements(By.XPATH,xpath)
+        lien=[i.get_attribute('href') for i in lien]
+        lien=lien[:5]
+        driver.quit()
+        return lien
+        pass
+    finally :
+        pass
+

@@ -2,6 +2,8 @@ from flask import Flask, render_template, request, session, redirect, url_for
 from fonction import find_size, BERT
 from collections.abc import Mapping
 from datetime import timedelta
+import time
+from fonction import get_links
 
 app = Flask(__name__)
 app.secret_key = 'votre_cle_secrete'
@@ -30,8 +32,9 @@ def prompt_prediction():
     tour_taille = int(request.form['taille'])
     tour_poitrine = int(request.form['poitrine'])
     tour_hanche = int(request.form['hanche'])
-
-    return render_template('prompt_prediction.html', recherche_taille=find_size(marque, sexe, tour_poitrine, tour_taille, tour_hanche))
+    global SIZE
+    SIZE=find_size(marque, sexe, tour_poitrine, tour_taille, tour_hanche)
+    return render_template('prompt_prediction.html', recherche_taille=SIZE)
 
 #-----------------------------------------------Page de prompt--------------------------------------------------------------
 
@@ -39,8 +42,8 @@ def prompt_prediction():
 def prompt_result():
     f = request.form['camenBert']
     picture_path = BERT(f)
-    return render_template('prompt_result.html', picture_prompt=picture_path)
-                           
+    liens=get_links(f,SIZE)
+    return render_template('prompt_result.html', picture_prompt=picture_path,links=liens)                          
 #-----------------------------------------------Page de connection--------------------------------------------------------------
 
 @app.route('/connection', methods=['POST', 'GET'])
